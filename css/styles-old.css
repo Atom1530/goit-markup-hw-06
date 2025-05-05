@@ -209,11 +209,6 @@ font-weight: 500;
 }
 
 
-.footer-logo-part { 
-   color: #f4f4fd ; 
-
-}
-
 .container.footer-add-section {
    display: flex;
    align-items: baseline;
@@ -228,37 +223,15 @@ margin-right: 120px;
 
 .footer-logo{
    display: inline-block;
-   margin-bottom: 16px;
 }
 
 
-.footer-paragraph {
-   font-weight: 400;
-      font-size: 16px;
-   
-      line-height: 1.5;
-      letter-spacing: 0.02em;
-      color: #f4f4fd;
-      max-width: 264px
-}
 
 .social-list.footer-list {
    gap: 16px;
 }
 
-.social-link.footer-link:focus, .social-link.footer-link:hover {
-  background-color: #31d0aa;
 
-}
-
-.footer-social-paragraph {
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.5;
-   letter-spacing: 0.02em;
-   color: #FFFFFF;
-   margin-bottom: 16px;
-}
 
 
 .footer-form {
@@ -266,19 +239,6 @@ margin-right: 120px;
    gap: 24px;
 }
 
-.footer-input {
-   font-size: 12px;
-   border-radius: 4px;
-   line-height: 2;
-   letter-spacing: 0.04em;
-   width: 264px;
-   height: 40px;
-   border: 1px solid #ffffff;
-   background-color: transparent;
-   padding-left: 16px;
-   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-   color: #ffffff;
-}
 
 .footer-input::placeholder {
    font-weight: 400;
@@ -309,9 +269,7 @@ margin-right: 120px;
    
 }
 
-.footer-svg {
-margin-left: 16px;
-}
+
 /* backdrop modal */
 
 .backdrop {
@@ -428,54 +386,7 @@ fill: #ffffff
    margin-bottom: 8px;
 }
 
-.input-box:has(input:hover) .form-icon,.input-box:has(input:focus) .form-icon {
-      fill: #4d5ae5;
-}
 
-.input-box:hover,
-.input-box:focus {
-   border: 1px solid #4d5ae5;
-   border-radius: 4px;
-}
-
-.input {
-   height: 40px;
-   width: 100%;
-   border: 1px solid rgba(46, 47, 66, 0.4);
-   border-radius: 4px;
-   background-color: transparent;
-   padding-left: 38px;
-   outline: transparent;
-   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-}
-.input:focus, .input:hover, .textarea-comment:hover, .textarea-comment:focus{
-   border-color: #4D5AE5;
-}
-
-.form-icon {
-   position: absolute;
-   left: 16px;
-   top: 50%;
-   transform: translateY(-50%);
-   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.input:focus .form-icon{
-   fill: #4D5AE5;
-   
-}
-
-.input-style {
-border: 1px solid rgba(46, 47, 66, 0.4);
-   border-radius: 4px;
-   width: 360px;
-   height: 40px;
-   padding-left: 38px;
-   
-}
 
 .form-label {
    text-align: start;
