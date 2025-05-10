@@ -139,15 +139,17 @@ a {
     color:#404bbf
 }
 
-.nav-list {
-       display: flex;
-       flex-direction: column;
-       gap: 40px;
-   }
 
-.contacts {
-    font-style: normal;
+
+.mobile-menu.is-open .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mobile-menu.is-open .contacts {
     display: block;
+    font-style: normal;
 }
 
 
