@@ -59,13 +59,91 @@
           </svg>
         </button>
       </div>
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close" data-menu-close>
+            <svg class="modal-close-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-closesvg"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link current" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts">
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+            <ul class="social-list">
+              <li class="social-item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <svg class="social-svg-pic" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://x.com/" class="social-link" target="_blank">
+                  <svg class="social-svg-pic" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <svg class="social-svg-pic" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <svg class="social-svg-pic" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </header>
 
     <main class="page-main">
       <section class="main-section-one">
         <div class="container">
           <h1 class="main-title-one">Effective Solutions for Your Business</h1>
-          <button type="button" class="section-one-button">
+          <button type="button" class="section-one-button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -132,34 +210,66 @@
           <h2 class="section-three-title">Our Team</h2>
           <ul class="section-three-list">
             <li class="section-three-list-item">
-              <img src="./images/img_4.jpg" alt="Mark Guerrero" width="264" />
+              <picture>
+                <source
+                  srcset="./images/mark.jpg 1x, ./images/mark-2x.jpg 2x"
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="./images/mark.jpg 1x, ./images/mark-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/mark.jpg"
+                  srcset="./images/mark.jpg 1x, ./images/mark-2x.jpg 2x"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+              </picture>
+
               <div class="section-three-list-item-section">
                 <h3 class="section-three-list-title">Mark Guerrero</h3>
                 <p class="section-three-list-paragraph">Product Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://x.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -169,34 +279,65 @@
               </div>
             </li>
             <li class="section-three-list-item">
-              <img src="./images/img_3.jpg" alt="Tom Ford" width="264" />
+              <picture>
+                <source
+                  srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/img_3.jpg"
+                  srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
+                  alt="Tom Ford"
+                  width="264"
+                />
+              </picture>
               <div class="section-three-list-item-section">
                 <h3 class="section-three-list-title">Tom Ford</h3>
                 <p class="section-three-list-paragraph">Frontend Developer</p>
                 <ul class="social-list">
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://x.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -206,34 +347,65 @@
               </div>
             </li>
             <li class="section-three-list-item">
-              <img src="./images/img_2.jpg" alt="Camila Garcia" width="264" />
+              <picture>
+                <source
+                  srcset="./images/camila.jpg 1x, ./images/camila-2x.jpg 2x"
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="./images/camila.jpg 1x, ./images/camila-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/img_2.jpg"
+                  srcset="./images/camila.jpg 1x, ./images/camila-2x.jpg 2x"
+                  alt="Camila Garcia"
+                  width="264"
+                />
+              </picture>
               <div class="section-three-list-item-section">
                 <h3 class="section-three-list-title">Camila Garcia</h3>
                 <p class="section-three-list-paragraph">Marketing</p>
                 <ul class="social-list">
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://x.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -243,34 +415,63 @@
               </div>
             </li>
             <li class="section-three-list-item">
-              <img src="./images/img_1.jpg" alt="Daniel Wilson" width="264" />
+              <picture>
+                <source
+                  srcset="./images/daniel.jpg 1x, ./images/daniel-2x.jpg 2x"
+                  media="min-width: 1024px" />
+                <source
+                  srcset="./images/daniel.jpg 1x, ./images/daniel-2x.jpg 2x"
+                  media="min-width: 768px" />
+
+                <img
+                  src="./images/daniel.jpg"
+                  srcset="./images/daniel.jpg 1x, ./images/daniel-2x.jpg 2x"
+                  alt="Daniel Wilson"
+                  width="264"
+              /></picture>
               <div class="section-three-list-item-section">
                 <h3 class="section-three-list-title">Daniel Wilson</h3>
                 <p class="section-three-list-paragraph">UI Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://x.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="" class="social-link">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="social-link"
+                      target="_blank"
+                    >
                       <svg class="social-svg-pic" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -463,9 +664,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is">
-      <div class="modal display-none">
-        <button type="button" class="closebutton">
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="closebutton" data-modal-close>
           <svg class="modal-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-closesvg"></use>
           </svg>
@@ -546,5 +747,6 @@
         </form>
       </div>
     </div>
+    <script src="/js/modal.js"></script>
   </body>
 </html>
