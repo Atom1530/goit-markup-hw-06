@@ -15,14 +15,6 @@ color: #f4f4fd;
 /* main part */
 
 
-.main-section-one {
-   padding: 72px 52px;
-
-
-   min-width: 320px;
-
-   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);  
-}
 
    
 .main-title-one {
