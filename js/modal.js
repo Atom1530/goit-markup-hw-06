@@ -1,19 +1,29 @@
 (() => {
-  const refs = {
-    // Додати атрибут data-modal-open на кнопку відкриття
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    // Додати атрибут data-modal-close на кнопку закриття
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    // Додати атрибут data-modal на бекдроп модалки
+  // Модалка
+  const modalRefs = {
+    openBtn: document.querySelector('[data-modal-open]'),
+    closeBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  modalRefs.openBtn.addEventListener('click', () => {
+    modalRefs.modal.classList.toggle('is-open');
+  });
+  modalRefs.closeBtn.addEventListener('click', () => {
+    modalRefs.modal.classList.toggle('is-open');
+  });
 
-  function toggleModal() {
-    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
-    refs.modal.classList.toggle('is-open');
-  }
+  // Бургер-меню
+  const menuRefs = {
+    openBtn: document.querySelector('[data-menu-open]'),
+    closeBtn: document.querySelector('[data-menu-close]'),
+    menu: document.querySelector('[data-menu]'),
+  };
+
+  menuRefs.openBtn.addEventListener('click', () => {
+    menuRefs.menu.classList.toggle('is-open');
+  });
+  menuRefs.closeBtn.addEventListener('click', () => {
+    menuRefs.menu.classList.toggle('is-open');
+  });
 })();
-

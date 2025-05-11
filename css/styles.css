@@ -172,6 +172,9 @@ a {
    .burger-btn {
     display: none;
    }
+   .contacts {
+       display: block;
+   }
 
    .header-nav {
        display: flex;
