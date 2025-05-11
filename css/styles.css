@@ -473,9 +473,13 @@ a {
 .social-list {
     display: flex;
    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 24px;
 
+}
+
+.contacts .social-list {
+    justify-content: space-between;
 }
 
 .social-link {
